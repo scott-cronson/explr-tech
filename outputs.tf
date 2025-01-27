@@ -1,3 +1,3 @@
-output "ip" {
-    value = google_compute_instance.vm_instance.network_interface.0.network_ip
+output "airflow-uri" {
+    value = google_composer_environment.airflow2.config[0].airflow_uri
 }
